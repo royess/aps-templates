@@ -1,0 +1,61 @@
+\documentclass[onecolumn,prx,superscriptaddress,longbibliography,nofootinbib]{revtex4-1}
+
+% packages
+\usepackage[dvips]{graphicx} % for figures
+\usepackage{amsfonts,amscd,amsmath,amsthm}
+\usepackage{enumerate}
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage{xcolor}
+\usepackage[colorlinks = true]{hyperref}
+\usepackage{physics}
+\usepackage{epstopdf}
+%\usepackage[expert]{mathdesign}
+\usepackage{framed}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage{longtable}
+\usepackage{comment}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage[most]{tcolorbox}
+
+\usepackage{tikz}
+\usetikzlibrary{tikzmark, calc, fit, positioning}
+\usetikzlibrary{shapes}
+\usetikzlibrary{quantikz}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{claim}{Claim}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{postulate}{Postulate}
+\newtheorem{observation}{Observation}
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{presumption}{Presumption}
+\newtheorem{remark}{Remark}
+\newtheorem{example}{Example}
+\newtheorem{criterion}{Criterion}
+\newtheorem{question}{Question}
+%\newenvironment{solution}{{\noindent\it \textbf{Solution}:}\quad}{\hfill $\square$\par}
+\newenvironment{solution} {\begin{proof}[Solution]} {\end{proof}}
+
+\newtcolorbox[auto counter]{mybox}[2][]{
+	enhanced,
+	breakable,
+	colback=blue!5!white,
+	colframe=blue!75!black,
+	fonttitle=\bfseries,
+	title=Box \thetcbcounter: #2,#1
+}
+
+\newcommand{\dbar}{d\hspace*{-0.08em}\bar{}\hspace*{0.1em}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Choose a style
+% do not use \bibliographystyle if we want APS format
+%\bibliographystyle{ieeetr}
+%\bibliographystyle{unsrt}
+% \bibliographystyle{apsrev}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
